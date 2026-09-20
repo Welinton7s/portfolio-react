@@ -1,0 +1,138 @@
+header{
+    background-color: var(--bg-primary);
+    padding: 1.25rem 0;
+}
+
+.container{
+    width: min(90%, 75rem);
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+}
+
+.logo span .tag {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.logo img{
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.logo span{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+.logo span:hover{
+    color: var(--primary);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    transition: color .3s ease;
+}
+
+.menu a:hover{
+    color: var(--primary);
+}
+
+
+/* Menu Responsivo */
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(0.5625rem) rotate(45deg);
+}
+
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-0.5625rem) rotate(-45deg);
+}
+
+
+/* até 900px */
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg-primary);
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 10;
+    }
+
+    .menu.ativo {
+        max-height: 20rem;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+}

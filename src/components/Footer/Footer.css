@@ -1,0 +1,42 @@
+footer{
+    background-color: var(--bg-primary);
+    padding: 1.5rem 0;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer p{
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+footer .footer-social{
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer .footer-social a{
+    color: var(--gray);
+    font-size: 1.375rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social a:hover{
+    color: var(--primary);
+}
+
+/* até 600px */
+@media (max-width: 600px) {
+
+
+footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

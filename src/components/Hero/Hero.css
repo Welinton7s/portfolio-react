@@ -1,0 +1,139 @@
+#hero{
+    min-height: 90vh;
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+#hero .hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#hero .hero-text{
+    margin-top: 2rem;
+    color: #94A3B8;
+}
+
+#hero .hero-text h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #F8FAFC;
+}
+
+#hero .hero-text h1 span{
+    color: #3B82F6;
+}
+
+#hero .hero-text h2{
+    margin-top: 2rem;
+    color: #3B82F6;
+    font-size: 1.25rem;
+}
+
+#hero .hero-text .descricao{
+    margin-top: 2rem;
+    color: #94A3B8;
+}
+
+#hero .hero-text .botoes{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#hero .hero-text .botoes .btn,
+#hero .hero-text .botoes .btn-outline{
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+#hero .hero-text .botoes .btn{
+    background-color: #3B82F6;
+    color: #F8FAFC;
+    border: 2px solid #3B82F6;
+}
+
+#hero .hero-text .botoes .btn:hover{
+    background-color: #2563EB;
+}
+
+#hero .hero-text .botoes .btn-outline{
+    background-color: transparent;
+    color: #3B82F6;
+    border: 2px solid #3B82F6;
+}
+
+#hero .hero-text .botoes .btn-outline:hover{
+    background-color: #3B82F6;
+    color: #F8FAFC;
+}
+
+#hero .hero-img img{
+    width: 35rem;
+    border-radius: 20px;
+    border: .1rem solid #2563EB;
+    box-shadow: 0 0 2rem rgba(37,99,235,.4);
+}
+
+/* até 900px */
+@media (max-width: 900px) {
+
+ #hero .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    #hero .hero-text .botoes {
+        justify-content: center;
+    }
+
+    #hero .hero-img img {
+        width: 22rem;
+        height: auto;
+    }
+
+}
+
+
+/* até 600px */
+@media (max-width: 600px) {
+
+    #hero .hero-text h1 {
+        font-size: 1.75rem;
+    }
+
+    #hero .hero-text h2 {
+        font-size: 1.0625rem;
+    }
+
+    #hero .hero-text .botoes {
+        flex-direction: column;
+    }
+
+    #hero .hero-text .botoes .btn,
+    #hero .hero-text .botoes .btn-outline {
+        width: 100%;
+    }
+
+    #hero .hero-img img {
+        width: 100%;
+        max-width: 16rem;
+        height: auto;
+    }
+
+}

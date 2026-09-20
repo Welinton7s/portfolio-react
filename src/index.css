@@ -1,0 +1,14 @@
+:root{
+    --bg-primary: #060C18;
+    --bg-secondary: #0F172A;
+    --primary: #2563EB;
+    --white: #FFFFFF;
+    --gray: #9B9C9F;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,118 @@
+#contato{
+    background-color: #F8FAFC;
+    padding: 2rem 0 2rem 0;
+}
+
+#contato .contato-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#contato .contato-content .contato-text {
+    grid-column: 1 / -1;
+}
+
+#contato .contato-content .contato-text h2{
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#contato .contato-content .contato-text h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+#contato .contato-content .contato-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: start;
+}
+
+#contato .contato-content .contato-form input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0;
+}
+
+#contato .contato-content .contato-form textarea{
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0;
+}
+
+#contato .contato-content .contato-form button{
+    grid-column: 1 / -1;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    height: 2.75rem;
+    cursor: pointer;
+}
+
+#contato .contato-content .contato-lista{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    min-height: 15rem;
+    height: fit-content;
+    border-radius: 0.75rem;
+}
+
+#contato .contato-content .contato-lista p{
+    margin-top: 1rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+#contato .contato-content .contato-lista ul{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+#contato .contato-content .contato-lista ul li{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#contato .contato-content .contato-lista ul li svg{
+    color: var(--primary);
+    font-size: 1.125rem;
+    flex-shrink: 0;
+}
+
+#contato .contato-content .contato-lista ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#contato .contato-content .contato-lista ul li a:hover {
+    text-decoration: underline;
+}
+
+
+  @media (max-width: 900px) {
+  #contato .contato-content {
+    grid-template-columns: 1fr;
+  }
+
+  #contato .contato-content .contato-form {
+    grid-template-columns: 1fr;
+  }
+}
