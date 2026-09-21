@@ -4,7 +4,7 @@ import Home from './pages/Home/Home'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-react">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
