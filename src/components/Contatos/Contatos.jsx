@@ -1,5 +1,5 @@
 import './Contatos.css'
-import { FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6"
+import { FaEnvelope, FaWhatsapp, FaLocationDot } from "react-icons/fa6"
 
 function Contatos(){
 
@@ -30,8 +30,10 @@ function Contatos(){
                             <a href="mailto:welintonara7@gmail.com">welintonara7@gmail.com</a>
                             </li>
                             <li>
-                            <FaPhone />
-                            <a href="tel:+5599984646035">(99) 984646035</a>
+                            <FaWhatsapp />
+                            <a href="https://wa.me/5599984646035" target="_blank" rel="noopener noreferrer">
+                                (99) 984646035
+                            </a>
                             </li>
                             <li><FaLocationDot /> Presidente Dutra, Maranhão</li>
                         </ul>
